@@ -17,8 +17,7 @@ def encode(x):
 
 
 def main():
-    training_sequence_dataset_file_path = os.path.dirname(__file__) + "\\Dataset\\Tables\\Training sequence " \
-                                                                      "dataset.xlsx"
+    training_sequence_dataset_file_path = os.path.dirname(__file__) + "\\Training sequence dataset.xlsx"
     training_dataset = pd.read_excel(training_sequence_dataset_file_path)
 
     x = training_dataset["SEQUENCE"].tolist()
