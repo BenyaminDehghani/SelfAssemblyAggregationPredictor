@@ -18,8 +18,7 @@ def encode(x):
 
 
 def main():
-    external_validation_sequence_dataset_file_path = os.path.dirname(__file__) + "\\Dataset\\Tables\\External " \
-                                                                                 "validation dataset.xlsx"
+    external_validation_sequence_dataset_file_path = os.path.dirname(__file__) + "\\External validation dataset.xlsx"
     external_validation_sequence_dataset = pd.read_excel(external_validation_sequence_dataset_file_path)
     x = external_validation_sequence_dataset["SEQUENCE"].tolist()
     y = external_validation_sequence_dataset["AGGREGATION"].tolist()
